@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Satisfaction Survey</h1>
+      <p id="description">Thank you for helping us improve our services.</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name <input id="name" type="text"required placeholder="Enter your name"/></label>
+          <label id="email-label">Email Address<input id="email" type="email" required placeholder="Enter your email" /></label>
+          <label id="number-label">Age <input id="number" type="number"required min="13" max="120" placeholder="Enter your age" /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown" id="dropdown-label"> Rate your satisfaction: 
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Very Satisfied</option>
+              <option value="2">Somewhat Satisfied</option>
+              <option value="3">Neutral</option>
+              <option value="4">Somewhat Unsatisfied</option>
+              <option>Very Unsatisfied</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Did any crashes occur?</legend>
+          <label for="crashes-yes">Yes<input id="crashes-yes" type="radio" name="crashes" checked value="no"/></label>
+          <label for="crashes-no">No<input id="crashes-no" type="radio" name="crashes" value="no"/></label>
+        </fieldset>
+        <fieldset>
+          <legend>Which of the following did you do if any?</legend>
+          <label>Bought an item <input type="checkbox" value="allow-use"/></label>
+          <label>Requested customer service <input type="checkbox" value="allow-use"/></label>
+          <label>Returned an item <input type="checkbox" value="allow-use"/></label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional comments</legend>
+          <textarea placeholder="ex/ questions, suggestions, etc."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </section>
+  </body>
+</html>
